@@ -520,7 +520,6 @@ jobs:
     permissions:
       contents: read
       copilot-requests: write # Authenticate requests to the Copilot engine.
-    cache-mode: read
     concurrency:
       group: "gh-aw-copilot-${{ github.workflow }}"
       queue: max
