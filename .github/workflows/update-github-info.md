@@ -3,8 +3,9 @@ name: update-github-info
 description: Keep Mona's GitHub Info website current with practical, sourced updates from the GitHub Blog, Changelog, and Awesome Copilot workflows.
 intent: Help developers learn GitHub faster by keeping Mona's GitHub Info website current with practical, sourced updates.
 on:
-  schedule: daily
   workflow_dispatch:
+  schedule:
+  - cron: '17 9 * * *'
 permissions:
   contents: read
   copilot-requests: write
